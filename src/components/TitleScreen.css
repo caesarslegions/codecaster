@@ -1,0 +1,56 @@
+.title-screen-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+  }
+  
+  .title {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+  }
+  
+  .subtitle {
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+  
+  .wizard-sprite {
+    /* Set the width and height to the size of a single frame */
+    width: 128px;
+    height: 128px;
+    /* Place the image at the center */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Set the background to the sprite sheet */
+    background: url("C:\Users\Student\workspace\codecaster\public\img\FireWizard\Idle.png") 0 0;
+    /* Set the animation */
+    animation: wizard-animation 1s steps(7) infinite;
+  }
+  
+  @keyframes wizard-animation {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      /* Set the total width of the sprite sheet, multiplied by -1 */
+      background-position: -896px 0;
+    }
+  }
+  
+  
+  
+  .start-game-button {
+    padding: 1em 2em;
+    font-size: 1.5em;
+    background: #f00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
