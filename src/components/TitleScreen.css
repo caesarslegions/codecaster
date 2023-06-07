@@ -18,30 +18,39 @@
     margin-bottom: 2em;
   }
   
-  .wizard-sprite {
-    /* Set the width and height to the size of a single frame */
-    width: 128px;
-    height: 128px;
-    /* Place the image at the center */
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    /* Set the background to the sprite sheet */
-    background: url("C:\Users\Student\workspace\codecaster\public\img\FireWizard\Idle.png") 0 0;
-    /* Set the animation */
-    animation: wizard-animation 1s steps(7) infinite;
+ /* common properties for wizard sprites */
+ .wizard-sprite {
+  /* Set the size of a single frame here */
+  width: 128px;
+  height: 128px;
+  /* Use transform to scale the sprite */
+  transform: scale(2.5);
+  position: absolute;
+  top: 50%;
+  animation: wizard-animation 1s steps(7) infinite;
+}
+
+/* fire wizard properties */
+.fire-wizard {
+  left: 25%;
+  background: url("C:\Users\Student\workspace\codecaster\public\img\FireWizard\Idle.png") 0 0;
+}
+
+/* lightning wizard properties */
+.lightning-wizard {
+  right: 25%;
+  background: url("C:\Users\Student\workspace\codecaster\public\img\LightningWizard\Idle.png") 0 0;
+}
+
+/* animation keyframes */
+@keyframes wizard-animation {
+  0% {
+    background-position: 0 0;
   }
-  
-  @keyframes wizard-animation {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      /* Set the total width of the sprite sheet, multiplied by -1 */
-      background-position: -896px 0;
-    }
+  100% {
+    background-position: -896px 0;
   }
+}
   
   
   

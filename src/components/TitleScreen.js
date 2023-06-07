@@ -6,28 +6,34 @@ import './TitleScreen.css';
 function TitleScreen() {
   const navigate = useNavigate();
 
-  return (
-    <motion.div 
-      className="title-screen-container" 
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: 1 }} 
-      transition={{ duration: 1.5 }}
+// ...
+
+return (
+  <motion.div 
+    className="title-screen-container" 
+    initial={{ opacity: 0 }} 
+    animate={{ opacity: 1 }} 
+    transition={{ duration: 1.5 }}
+  >
+    <h1 className="title">CodeCaster</h1>
+    <h2 className="subtitle">Master the spells of code in a magical world</h2>
+    
+    <div className="wizard-sprite fire-wizard" />
+    <div className="wizard-sprite lightning-wizard" />
+    
+    <motion.button 
+      className="start-game-button" 
+      whileHover={{ scale: 1.05 }} 
+      whileTap={{ scale: 0.95 }}
+      onClick={() => navigate('/home')}
     >
-      <h1 className="title">CodeCaster</h1>
-      <h2 className="subtitle">Master the spells of code in a magical world</h2>
-      
-      <div className="wizard-sprite" />
-      
-      <motion.button 
-        className="start-game-button" 
-        whileHover={{ scale: 1.05 }} 
-        whileTap={{ scale: 0.95 }}
-        onClick={() => navigate('/home')}
-      >
-        Start Game
-      </motion.button>
-    </motion.div>
-  );
+      Start Game
+    </motion.button>
+  </motion.div>
+);
+
+// ...
+
 }
 
 export default TitleScreen;
