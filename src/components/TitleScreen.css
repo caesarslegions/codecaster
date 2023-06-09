@@ -42,6 +42,16 @@
   background: url("C:\Users\Student\workspace\codecaster\public\img\LightningWizard\Idle.png") 0 0;
 }
 
+.fire-wizard:hover {
+  background: url("C:\Users\Student\workspace\codecaster\public\img\FireWizard\Flame_jet.png") 0 0;
+  animation: wizard-fire-spell-animation is steps(14) infinite;
+}
+
+.lightning-wizard:hover {
+  background: url("C:\Users\Student\workspace\codecaster\public\img\LightningWizard\Light_charge.png") 0 0;
+  animation: wizard-lightning-spell-animation is steps(12) infinite;
+}
+
 /* animation keyframes */
 @keyframes wizard-animation {
   0% {
@@ -51,8 +61,24 @@
     background-position: -896px 0;
   }
 }
-  
-  
+
+@keyframes wizard-fire-spell-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1792px 0;
+  }
+}
+
+@keyframes wizard-lightning-spell-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1664px 0;
+  }
+}
   
   .start-game-button {
     padding: 1em 2em;

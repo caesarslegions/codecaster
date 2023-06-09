@@ -1,0 +1,53 @@
+[
+    {
+      "spellName": "Lightning Bolt",
+      "spellDescription": "Harnessed from the arcane storms of Codia, this spell lets you unleash a bolt of pure energy. Useful for recharging magical artifacts.",
+      "codingChallenge": {
+        "challengeTitle": "Function Creation: Conjure the Bolt",
+        "challengeDescription": "In the realm of Codia, functions are the essence of every incantation. To harness the power of the Lightning Bolt, you must create a function named 'castLightningBolt'. This function must take no parameters, and it must return the string 'Zap!'. Unleash your arcane knowledge of functions to power the spell!",
+        "challengeSolution": "function castLightningBolt() {\n  return 'Zap!';\n}"
+      },
+      "spellEffect": "Recharges magical artifacts."
+    },
+    {
+      "spellName": "Fireball",
+      "spellDescription": "Ignite the air around you to cast a blazing ball of fire. Great for starting campfires or melting ice walls.",
+      "codingChallenge": {
+        "challengeTitle": "Variable Declaration: Ignite the Flame",
+        "challengeDescription": "In Codia, a well-placed word can light a fire. Declare a variable named 'castFireball' and set it equal to the string 'Boom!'. Use your fiery understanding of variables to create a spark!",
+        "challengeSolution": "let castFireball = 'Boom!';"
+      },
+      "spellEffect": "Melts ice walls."
+    },
+    {
+      "spellName": "Levitation",
+      "spellDescription": "Defy the laws of Codia by lifting objects or yourself into the air. Handy for reaching high places or crossing ravines.",
+      "codingChallenge": {
+        "challengeTitle": "Loops: Power the Lift",
+        "challengeDescription": "In Codia, repetition is a form of power. To cast the spell of Levitation, write a for loop that prints 'Rise!' 10 times. Remember, the power of Levitation lies in repetition!",
+        "challengeSolution": "for (let i = 0; i < 10; i++) {\n  console.log('Rise!');\n}"
+      },
+      "spellEffect": "Lifts objects into the air."
+    },
+    {
+      "spellName": "Invisibility",
+      "spellDescription": "Vanish from sight to avoid detection. Useful for sneaking past guards or escaping combat.",
+      "codingChallenge": {
+        "challengeTitle": "Conditionals: Control the Veil",
+        "challengeDescription": "In Codia, decisions determine reality. To control the Veil of Invisibility, create an if statement that prints 'Vanish!' when the variable 'invisible' is true. Use your knowledge of conditionals to disappear at will!",
+        "challengeSolution": "let invisible = true;\nif (invisible) {\n  console.log('Vanish!');\n}"
+      },
+      "spellEffect": "Makes the caster invisible."
+    },
+    {
+      "spellName": "Time Warp",
+      "spellDescription": "Alter the flow of time, speeding up or slowing down events around you. Time Warp can turn the tide of battles or make quick work of long journeys.",
+      "codingChallenge": {
+        "challengeTitle": "Arrays: Command the Continuum",
+        "challengeDescription": "In Codia, sequences hold sway over time itself. To cast Time Warp, create an array named 'timeSequence' with the elements 'Past', 'Present', and 'Future'. Command the flow of time with your understanding of arrays!",
+        "challengeSolution": "let timeSequence = ['Past', 'Present', 'Future'];"
+      },
+      "spellEffect": "Alters the speed of time."
+    }
+  ]
+  

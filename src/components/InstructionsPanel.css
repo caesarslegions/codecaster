@@ -1,0 +1,32 @@
+.scroll-container {
+  background: url('C:/Users/Student/workspace/codecaster/public/img/instructions-scroll.png') repeat-y center center;
+  padding: 40px;
+  font-family: 'Tangerine', cursive;
+  color: #333;
+  animation: unfurl 2s ease-out;
+  max-width: 80%;
+  margin: 0 auto;
+  width: 572px;
+  height: 640px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Add a scrollbar if necessary */
+  text-align: justify; /* Optional: to align the text */
+}
+
+.challenge-title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.challenge-description {
+  font-size: 1.2em;
+}
+
+@keyframes unfurl {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
