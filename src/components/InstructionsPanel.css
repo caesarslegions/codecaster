@@ -4,22 +4,28 @@
   font-family: 'Tangerine', cursive;
   color: #333;
   animation: unfurl 2s ease-out;
-  max-width: 80%;
-  margin: 0 auto;
   width: 572px;
   height: 640px;
-  box-sizing: border-box;
-  overflow-y: auto; /* Add a scrollbar if necessary */
-  text-align: justify; /* Optional: to align the text */
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 .challenge-title {
   font-size: 2em;
   text-align: center;
+  padding-top: 80px;
+  padding-left: 85px;
 }
 
 .challenge-description {
   font-size: 1.2em;
+  padding-left: 85px;
 }
 
 @keyframes unfurl {
@@ -28,5 +34,22 @@
   }
   100% {
     transform: scaleY(1);
+  }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .scroll-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .challenge-title {
+    padding-top: 80px;
+    padding-left: 70px;
+  }
+
+  .challenge-description {
+    padding-left: 60px;
   }
 }

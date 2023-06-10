@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Eagle Lake', cursive;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-menu {
+    display: flex;
+  }
+  
+  .navbar-item {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-item.active {
+    color: #f00;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-menu {
+      flex-direction: column;
+    }
+  }
+  

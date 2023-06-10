@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Instructions Panel: This is where the user will see the coding challenges. We can start by creating a simple component that displays a static challenge. Later, we can make it dynamic so it can display different challenges.
+
+Navigation Bar: You mentioned that you have a rudimentary navigation bar set up. We can refine this and make sure it allows the user to navigate through the different parts of the app smoothly.
+
+GameWorld: We've already started on this with the wizard selection. We can further develop this component to display the wizard sprite and any other game elements.
+
+Coding Console: We've set up the basic functionality, but as you mentioned, it will need to be repositioned and resized. We can also consider adding more features, like error handling and feedback for the user when they run their code.
+
+User Authentication: This is a larger feature that involves setting up a backend to handle user registration and login. We can use a service like Firebase for this, which provides user authentication out of the box.
+
+Coding Challenges: This is the core of your app. We'll need to come up with a set of challenges for the user to solve. Each challenge will need a description, a set of tests, and a solution for validation.
+
+Testing and Refinement: Throughout the development process, we'll need to continuously test the app to make sure everything is working as expected. We'll also need to refine the UI and UX based on feedback and testing.
+
+Deployment: Once everything is working and looking good, we can deploy the app to a hosting service like Netlify or Vercel.
