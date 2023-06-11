@@ -1,0 +1,30 @@
+/* common properties for wizard sprites */
+.wizard-sprite {
+    /* Set the size of a single frame here */
+    width: 128px;
+    height: 128px;
+    /* Use transform to scale the sprite */
+    transform: scale(2.5);
+    animation: wizard-animation 1s steps(7) infinite;
+  }
+  
+  /* fire wizard properties */
+  .fire-wizard {
+    background: url("C:\Users\Student\workspace\codecaster\public\img\FireWizard\Idle.png") 0 0;
+  }
+  
+  /* lightning wizard properties */
+  .lightning-wizard {
+    background: url("C:\Users\Student\workspace\codecaster\public\img\LightningWizard\Idle.png") 0 0;
+  }
+  
+  /* animation keyframes */
+  @keyframes wizard-animation {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -896px 0;
+    }
+  }
+  

@@ -34,12 +34,14 @@
 .fire-wizard {
   left: 25%;
   background: url("C:\Users\Student\workspace\codecaster\public\img\FireWizard\Idle.png") 0 0;
+  animation: wizard-animation 1s steps(7) infinite;
 }
 
 /* lightning wizard properties */
 .lightning-wizard {
   right: 25%;
   background: url("C:\Users\Student\workspace\codecaster\public\img\LightningWizard\Idle.png") 0 0;
+  animation: wizard-animation 1s steps(7) infinite;
 }
 
 .fire-wizard:hover {
@@ -48,8 +50,8 @@
 }
 
 .lightning-wizard:hover {
-  background: url("C:\Users\Student\workspace\codecaster\public\img\LightningWizard\Light_charge.png") 0 0;
-  animation: wizard-lightning-spell-animation is steps(12) infinite;
+  background: url("C:\Users\Student\workspace\codecaster\public\img\LightningWizard\Attack_1.png") 0 0;
+  animation: wizard-lightning-spell-animation is steps(10) infinite;
 }
 
 /* animation keyframes */
@@ -76,7 +78,7 @@
     background-position: 0 0;
   }
   100% {
-    background-position: -1664px 0;
+    background-position: -1280px 0;
   }
 }
   
